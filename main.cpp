@@ -1,10 +1,14 @@
 #include <iostream>
+#include <Windows.h>
 #include <memory>
 #include "Animal.h"
 #include "Dog.h"
 
 int main()
 {
+    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
+
     std::cout << "--- Suorat oliot (ei polymorfismia) ---" << std::endl;
 
     Animal a;
